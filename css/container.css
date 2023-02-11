@@ -1,0 +1,33 @@
+.container{
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+    grid-gap: 20px 30px;
+    height: 800px;
+    border: 1px solid red;
+    grid-template-areas: 
+    "left middle middle right"
+    "left middle middle right"
+    ;
+}
+
+
+.container__item{
+padding: 20px;
+display: grid;
+align-items: center;
+justify-content: center;
+background: rebeccapurple;
+
+}
+.container__item--last{
+
+grid-area: middle;
+}
+
+
+
+.container2{
+max-width: 800px;
+margin: 0 auto;
+
+}

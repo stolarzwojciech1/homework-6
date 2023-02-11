@@ -1,0 +1,39 @@
+.flex {
+
+    display: flex;
+    max-width: 600px;
+    border: 1px solid red;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.flex__item{
+    flex-basis: 34%;
+    margin: 20px;
+
+}
+
+@media(max-width: 767px){
+.flex{
+
+    flex-wrap: wrap;
+}
+}
+@media(max-width: 767px){
+
+    .flex__item{
+        flex-basis: 34%;
+        flex-grow: 1;
+    }
+
+
+}
+@media(max-width: 500px){
+
+    .flex__item{
+        flex-basis: 51%;
+        flex-grow: 1;
+    }
+
+
+}
